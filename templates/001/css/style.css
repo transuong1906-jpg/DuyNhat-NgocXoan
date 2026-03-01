@@ -1,0 +1,1085 @@
+
+@font-face {
+  font-family: "Cormorantgaramond";
+  src: url(../font/cormorantgaramond-medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Cormorantgaramond";
+  src: url(../font/cormorantgaramond-semibold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Cormorantgaramond";
+  src: url(../font/cormorantgaramond-bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SVN Betalisa";
+  src: url(../font/svn-betalisa.otf);
+}
+@font-face {
+  font-family: "iCiel Novecento";
+  src: url(../font/icielnovecentosans-normal.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Lora";
+  src: url(../font/lora-regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #333;
+  font-family: "Cormorantgaramond"!important;
+  font-size: 16px;
+  --color-primary: rgb(131, 4, 13);
+  --text-color-primary: rgb(255, 255, 255);
+  --color-primary-raw: 131, 4, 13;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+body .btn-link {
+  text-decoration: none;
+  color: inherit;
+  color: #3f51b5;
+}
+body img {
+  max-width: 100%;
+}
+
+.card-wrapper {
+  max-width: 480px;
+  margin: auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card-section {
+  position: relative;
+  padding: 50px 0;
+}
+
+.paper-bg {
+  position: relative;
+}
+.paper-bg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-repeat: repeat;
+  background-position: left top;
+  background-attachment: scroll;
+  background-origin: content-box;
+  filter: brightness(104%);
+}
+.paper-bg .inner {
+  position: relative;
+  z-index: 1;
+}
+
+#card-banner {
+  aspect-ratio: 420/647;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+#card-banner::before {
+  z-index: 0;
+  height: 50%;
+  width: 100%;
+  width: calc(100% + 6px);
+  position: absolute;
+  left: -3px;
+  bottom: 0;
+  content: "";
+  display: block;
+  background-image: linear-gradient(rgb(6 113 55 / 0%), rgb(139 0 0));
+  background-color: initial;
+  background-size: initial;
+  background-origin: initial;
+  background-position: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#card-banner .decor {
+  position: absolute;
+}
+#card-banner .decor1 {
+  width: 112px;
+  left: -36px;
+  bottom: 25%;
+}
+#card-banner .decor2 {
+  width: 137px;
+  right: -30px;
+  bottom: -20px;
+}
+#card-banner .wedding-name-wrapper {
+  position: absolute;
+  bottom: 14%;
+  text-align: center;
+  width: 100%;
+}
+#card-banner .wedding-name {
+  font-family: "Dancing Script";
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  display: inline-block;
+  word-break: normal;
+  overflow-wrap: break-word;
+  line-height: 1.35;
+  padding-bottom: 4px;
+}
+#card-banner .wedding-name .groom-shadow {
+  opacity: 0;
+  font-size: 55%;
+}
+#card-banner .wedding-name .and {
+  font-size: 60%;
+  margin-right: 10px;
+}
+#card-banner .wedding-date {
+  font-family: "Cormorantgaramond";
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+#card-info .section-title-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 2;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px 12px;
+    padding-bottom: 5px;
+}
+#card-info .groombride {
+  position: relative;
+}
+#card-info .groombride .decor-bird1 {
+  opacity: 0.25;
+  position: absolute;
+  right: -50px;
+  top: -20px;
+  width: 200px;
+}
+#card-info .groombride .decor-bird2 {
+  opacity: 0.25;
+  position: absolute;
+  left: -50px;
+  bottom: -60px;
+  height: 250px;
+}
+#card-info .groombride .decor-flower {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 280px;
+  right: -20px;
+  opacity: 0.25;
+}
+#card-info .gb-box-wrapper .label {
+  font-size: 19px;
+  line-height: 1;
+  color: var(--color-primary);
+  padding: 16px;
+  text-transform: uppercase;
+}
+#card-info .gb-box-wrapper.groom {
+  text-align: right;
+  margin-top: 50px;
+}
+#card-info .gb-box-wrapper.groom .gb-box {
+  margin-left: auto;
+}
+#card-info .gb-box {
+  width: 80%;
+  position: relative;
+}
+#card-info .gb-box img {
+  width: 100%;
+}
+#card-info .gb-box .info {
+  padding: 16px;
+  color: var(--color-primary);
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#card-info .gb-box .info .fullname {
+  font-family: "Dancing Script";
+  font-size: 32px;
+  line-height: 1.6;
+}
+#card-info .gb-box .info .des {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  line-height: 2;
+  text-align: justify;
+  background: #25252575;
+  padding:10px;
+  border-radius: 10px;
+  color: white;
+}
+#card-info .lovestory-wrapper {
+  margin-top: 80px;
+  color: var(--text-color-primary);
+  background-color: #6d0208;
+  border-radius: 24px;
+  padding: 50px 24px;
+  position: relative;
+}
+#card-info .lovestory-wrapper .title {
+  padding-left: 24px;
+  margin-bottom: 15px;
+}
+#card-info .lovestory-wrapper .title span {
+  display: inline-block;
+}
+#card-info .lovestory-wrapper .title span:first-child {
+  font-family: "SVN Betalisa";
+  font-size: 40px;
+  line-height: 1.6;
+  text-align: left;
+  transform: translate(16px, -20px) rotate(-8deg);
+}
+#card-info .lovestory-wrapper .title span:last-child {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#card-info .lovestory-wrapper .content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  line-height: 2;
+  text-align: justify;
+}
+#card-info .lovestory-wrapper .extra {
+  position: absolute;
+  height: 135px;
+  width: 55px;
+  text-align: center;
+  padding-bottom: 8px;
+  background-color: #6d0208;
+  bottom: -136px;
+  right: 50px;
+}
+#card-info .lovestory-wrapper .extra img {
+  position: absolute;
+  width: 35px;
+  bottom: 10px;
+  left: 10px;
+}
+#card-info .lovestory-wrapper .decor-bird3 {
+  bottom: -250px;
+  right: 60px;
+  position: absolute;
+  opacity: 0.25;
+  width: 167px;
+}
+#card-info .parents {
+  padding: 0 24px;
+}
+#card-info .parents .title::before {
+  content: "";
+  display: block;
+  height: 80px;
+  width: 2px;
+  background-color: var(--color-primary);
+}
+#card-info .parents .title > div {
+  display: inline-block;
+  font-size: 19px;
+  line-height: 1.4;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 8px 0;
+  font-weight: 700;
+}
+#card-info .parents .content {
+  position: relative;
+  padding: 8px 0;
+  padding-left: 30px;
+}
+#card-info .parents .content::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  content: "";
+  display: block;
+  width: 2px;
+  background-color: var(--color-primary);
+}
+#card-info .parents .parent-box {
+  /* font-family: "Montserrat", sans-serif; */
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.8;
+}
+#card-info .parents .parent-box + .parent-box {
+  margin-top: 20px;
+}
+#card-info .parents .parent-box + .parent-message {
+  margin-top: 20px;
+}
+#card-info .parents .parent-box .name {
+  font-weight: bold;
+}
+#card-info .parents .children {
+  font-size: 18.75px;
+  line-height: 1.4;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 12px 0;
+  font-weight: 700;
+}
+#card-info .divider-img {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#card-info .divider-img img {
+  width: 80px;
+}
+.invitation-event-box {
+  color: var(--color-primary);
+}
+.invitation-event-box .event-title {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+.invitation-event-box .event-time {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+.invitation-event-box .event-time span {
+  font-size: 18px;
+  font-family: none;
+}
+.invitation-event-box .event-dayofweek {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.invitation-event-box .event-box-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.invitation-event-box .event-box-date .month {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-align: center;
+  position: relative;
+  padding: 0 12px;
+}
+.invitation-event-box .event-box-date .month span {
+  font-size: 26px;
+}
+.invitation-event-box .event-box-date .month::before, .invitation-event-box .event-box-date .month::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.invitation-event-box .event-box-date .month::before {
+  bottom: -5px;
+  border-bottom: 1px solid var(--color-primary);
+}
+.invitation-event-box .event-box-date .month::after {
+  top: -5px;
+  border-top: 1px solid var(--color-primary);
+}
+.invitation-event-box .event-box-date .day {
+  font-weight: 600;
+  font-size: 46.54px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.invitation-event-box .event-box-date .year {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 0 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+}
+.invitation-event-box .event-box-date .year span {
+  font-size: 26px;
+}
+.invitation-event-box .event-box-date .year::before, .invitation-event-box .event-box-date .year::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.invitation-event-box .event-box-date .year::before {
+  bottom: -5px;
+  border-bottom: 1px solid var(--color-primary);
+}
+.invitation-event-box .event-box-date .year::after {
+  top: -5px;
+  border-top: 1px solid var(--color-primary);
+}
+.invitation-event-box .event-lunar-date {
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+.invitation-event-box .event-location {
+  text-align: center;
+  margin-top: 24px;
+}
+.invitation-event-box .event-location .name {
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.invitation-event-box .event-location .address {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 12px;
+  text-align: center;
+}
+.invitation-event-box .event-location .location-name {
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.invitation-event-box .event-location .map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+  gap: 3px;
+}
+
+/* Multiple Events Support */
+.multiple-events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.multiple-events-container .event-divider {
+  width: 80px;
+  height: 2px;
+  background: var(--color-primary);
+  margin: 0 auto;
+  opacity: 0.4;
+}
+
+#card-gallery {
+  padding: 50px 8px;
+  color: var(--color-primary);
+}
+#card-gallery .card-section-title {
+  padding: 12px 0;
+  font-size: 42px;
+  line-height: 1;
+  color: inherit;
+  margin-bottom: 0;
+  /* font-family: "Monsieur La Doulaise"; */
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+#card-gallery .card-section-title > span {
+  text-transform: none;
+  font-family: "SVN Betalisa";
+  font-weight: 500;
+  line-height: 1;
+  font-size: 70px;
+}
+
+.photo-grid {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.photo-grid .photo {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.photo-grid + .view-more {
+  margin-top: 50px;
+}
+
+.photo-grid[data-masonry] {
+  -moz-column-gap: unset;
+       column-gap: unset;
+  -moz-column-count: unset;
+       column-count: unset;
+  margin: 0 -3px;
+}
+.photo-grid[data-masonry] .photo {
+  padding: 3px;
+  width: 50%;
+  margin-bottom: 0;
+}
+.photo-grid[data-masonry] .photo img {
+  height: auto;
+}
+.photo-grid .photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4; /* hoặc 1/1 */
+  object-fit: cover;
+}
+
+#card-comments {
+  position: relative;
+  --text-color-primary: var(--color-primary);
+}
+#card-comments .decor-flower {
+  position: absolute;
+  opacity: 0.2;
+  bottom: 0;
+  right: 0;
+  width: 115%;
+  display: block;
+  transform: scale(1.2);
+}
+#card-comments .inner {
+  padding: 0 16px;
+}
+#card-comments .inner .chuhy {
+  text-align: center;
+  margin-bottom: 12px;
+}
+#card-comments .inner .chuhy img {
+  width: 50px;
+}
+#card-comments .card-section-title {
+  font-size: 42px;
+  line-height: 1.6;
+  color: inherit;
+  margin-bottom: 0;
+  color: var(--color-primary);
+  text-align: center;
+  font-family: "SVN Betalisa";
+}
+#card-comments .card-section-subtitle {
+  margin-bottom: 24px;
+  color: var(--color-primary);
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#card-comments .comment-form {
+  background-color: rgba(var(--color-primary-raw), 0.25);
+  font-family: Montserrat, sans-serif;
+}
+#card-comments .comment-list {
+  font-family: Montserrat, sans-serif;
+}
+
+#countdown {
+  border: 1px solid var(--color-primary);
+  border-radius: 16px;
+  padding-bottom: 10px;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 50px;
+}
+#countdown .countdown-title {
+  font-family: SVN Betalisa;
+  position: absolute;
+  top: -30px;
+  left: 16px;
+  z-index: 1;
+  color: var(--color-primary);
+  font-size: 40px;
+  line-height: 1;
+}
+#countdown .countdown-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+#countdown .box,
+#countdown .colon {
+  font-size: 44px;
+  color: var(--color-primary);
+}
+#countdown .colon {
+  padding: 0 12px;
+}
+#countdown .box {
+  min-width: 45px;
+}
+
+#card-qr {
+  text-align: center;
+  padding: 40px 0;
+}
+#card-qr .qr-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+#card-qr .qr-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#card-qr .qr-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+#card-qr .qr-box a {
+  display: block;
+  cursor: pointer;
+}
+#card-qr .qr-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+#card-qr .qr-box a:hover img {
+  transform: scale(1.05);
+}
+#card-qr .bank-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  #card-qr .qr-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  #card-qr .qr-box img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+#card-thankyou {
+  background-color: var(--color-primary);
+  color: var(--text-color-primary);
+  text-align: center;
+}
+#card-thankyou .thankyou-title {
+  font-family: "SVN Betalisa";
+  font-size: 40px;
+}
+
+/* QR Code Button & Modal */
+.qr-button-section {
+  text-align: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(78, 100, 55, 0.05), rgba(78, 100, 55, 0.15));
+}
+
+.qr-gift-button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(78, 100, 55, 0.3);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qr-gift-button:hover {
+  background: rgb(131 4 13);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(78, 100, 55, 0.4);
+}
+
+.qr-gift-button i {
+  font-size: 22px;
+}
+
+.qr-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.3s ease;
+}
+
+.qr-modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-modal-content {
+  background: white;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.qr-modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  color: #333;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-modal-close:hover {
+  background: white;
+  transform: rotate(90deg);
+}
+
+.qr-modal-header {
+  height: 310px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.qr-modal-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0.9));
+}
+
+.qr-modal-body {
+  padding: 30px 20px;
+}
+
+.qr-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.qr-card {
+  flex: 1;
+  text-align: center;
+  max-width: 220px;
+  background: white;
+  border: 2px solid rgb(131 4 13);
+  border-radius: 15px;
+  padding: 20px 15px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  /* gap: 12px; */
+}
+
+.qr-card-image {
+  background: white;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.qr-card-image img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto
+}
+
+.qr-card-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(131 4 13);
+  text-align: center;
+  margin: 8px 0 4px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-card-bank {
+  font-size: 14px;
+  color: rgb(131 4 13);
+  text-align: center;
+  margin: 0;
+}
+
+.qr-card-account {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  margin: 0;
+  font-family: monospace;
+  line-height: 1.6;
+}
+
+.qr-card-info p {
+  margin: 5px 0;
+  word-break: break-all;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .qr-card {
+    max-width: 100%;
+  }
+  
+  .qr-modal-content {
+    width: 95%;
+    max-width: none;
+  }
+/*   
+  .qr-modal-header {
+    height: 150px;
+  } */
+  
+  .qr-gift-button {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}
+
+/* Custom for isNgocLam - Dual Events UI */
+#card-info .horizontal-line {
+  border-top: 2px dashed var(--color-primary);
+  margin: 32px 24px 12px 24px;
+  opacity: 0.2;
+}
+
+#card-info .wedding-side-title {
+  display: block;
+  margin: 24px auto;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 6px 32px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 250px
+}
+
+#card-info .event-block {
+  text-align: center;
+}
+
+#card-info .dual-events-container {
+  margin-top: 30px;
+  font-family: "Lora", serif;
+}
+
+#card-info .event-block {
+  margin-bottom: 24px;
+}
+
+#card-info .event-block .date-and-time {
+  margin: 16px 0;
+}
+
+#card-info .date-and-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 30px 0;
+}
+
+#card-info .date-and-time .time {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgb(131 4 13);
+  text-transform: uppercase;
+  text-align: right;
+  flex: 1;
+}
+
+#card-info .date-and-time .dayofweek {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgb(131 4 13);
+  text-transform: uppercase;
+  text-align: left;
+  flex: 1;
+}
+
+#card-info .date-and-time .date {
+  font-size: 43px;
+  line-height: 1.1;
+  color: rgb(131 4 13);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#card-info .date-and-time .vertical-line {
+  height: 42px;
+  display: inline-block;
+  border-left: 2px solid rgb(131 4 13);
+}
+
+#card-info .lunar-date {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(131 4 13);
+  text-align: center;
+}
+
+#card-info .locations {
+  margin-top: 20px;
+}
+
+#card-info .locations .label {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(131 4 13);
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+#card-info .location {
+  text-align: center;
+  color: rgb(131 4 13);
+  line-height: 1.6;
+}
+
+#card-info .location .name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+#card-info .location .address {
+  font-size: 16px;
+}
+
+#card-info .location .map-btn {
+  margin-top: 16px;
+  font-size: 21px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.day{
+  font-family: none;
+}
