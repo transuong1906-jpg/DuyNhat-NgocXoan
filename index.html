@@ -363,6 +363,14 @@ Hôm nay, khi viết tiếp hành trình ấy bằng một lời hẹn ước, c
 
     </button>
     <script src="/assets/js/common.js" type="module"></script>
+    <script>
+  document.addEventListener("click", function () {
+    const btn = document.getElementById("audioToggleBtn");
+    if (btn) {
+      btn.click();
+    }
+  }, { once: true }); // chỉ chạy 1 lần
+</script>
    <script>
 (function () {
 
